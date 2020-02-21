@@ -8,3 +8,12 @@
      total=num*PRICE;
      printf("total=%d\n",total);
  }
+
+void main()
+{
+    char a,b;
+    b='B';
+    a+=32;
+    b+=32;
+    printf("%c,%c\n",a,b);
+}
