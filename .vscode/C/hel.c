@@ -2,18 +2,27 @@
 
 void main()
 {
-    char c;
-    printf("intput a character: ");
-    c=getchar();
-    if(c<32)
-    printf("This is a control character\n");
-    else if(c>='0' && c<='9')
-    printf("This is a digit\n");
-    else if(c>='A' && c <= 'Z')
-    printf("This is a capital letter\n");
-    else if(c>='a' && c <= 'z')
-    printf("This is a small letter\n");
+    int score;
+    scanf("%d\n",&score);
+    if(score < 60)
+    {
+        printf("The score is E!\n");
+    }
+    else if((score > 60 || score == 60) && (score < 70))
+    {
+        printf("The score is D!\n");
+    }
+    else if((score >  70 || score == 70) && (score <80))
+    {
+        printf("The score is C!\n");
+    }
+    else if((score > 80 || score == 80) && (score < 90))
+    {
+        printf("The score is B!\n");
+    }
     else
-        printf("This is an other character\n");
+    {
+        printf("The score is A!\n");
+    }
     
 }
