@@ -1,12 +1,19 @@
 #include <stdio.h>
-#include <math.h>
 
 void main()
 {
-    char c='k';
-    int i=1,j=2,k=3;
-    float x=3e+5,y=0.85;
-    printf("%d,%d\n",'a'+5<c,-i-2*j>=k+1);
-    printf("%d,%d\n",1<j<5,25<=x+y);
-    printf("%d,%d\n",i+j+k==-2*j,k==j==i+5);
+    char c;
+    printf("intput a character: ");
+    c=getchar();
+    if(c<32)
+    printf("This is a control character\n");
+    else if(c>='0' && c<='9')
+    printf("This is a digit\n");
+    else if(c>='A' && c <= 'Z')
+    printf("This is a capital letter\n");
+    else if(c>='a' && c <= 'z')
+    printf("This is a small letter\n");
+    else
+        printf("This is an other character\n");
+    
 }
